@@ -1463,6 +1463,9 @@ public enum Talent {
 				case ARCHER:
 					y = 11;
 					break;
+				case NECROMANCER:
+					y = 1; // reuse mage row for universal T4 icon tinting
+					break;
 			}
 			if (Ratmogrify.useRatroicEnergy){
 				y = 12;
@@ -2681,6 +2684,9 @@ public enum Talent {
 			case MAGE:
 				Collections.addAll(tierTalents, EMPOWERING_MEAL, SCHOLARS_INTUITION, LINGERING_MAGIC, BACKUP_BARRIER, CHARGE_PRESERVE);
 				break;
+			case NECROMANCER:
+				Collections.addAll(tierTalents, EMPOWERING_MEAL, SCHOLARS_INTUITION, LINGERING_MAGIC, BACKUP_BARRIER, CHARGE_PRESERVE);
+				break;
 			case ROGUE:
 				Collections.addAll(tierTalents, CACHED_RATIONS, THIEFS_INTUITION, SUCKER_PUNCH, PROTECTIVE_SHADOWS, EMERGENCY_ESCAPE);
 				break;
@@ -2726,6 +2732,9 @@ public enum Talent {
 				Collections.addAll(tierTalents, IRON_STOMACH, LIQUID_WILLPOWER, RUNIC_TRANSFERENCE, LETHAL_MOMENTUM, IMPROVISED_PROJECTILES, PARRY);
 				break;
 			case MAGE:
+				Collections.addAll(tierTalents, ENERGIZING_MEAL, INSCRIBED_POWER, WAND_PRESERVATION, ARCANE_VISION, SHIELD_BATTERY, FASTER_CHARGER);
+				break;
+			case NECROMANCER:
 				Collections.addAll(tierTalents, ENERGIZING_MEAL, INSCRIBED_POWER, WAND_PRESERVATION, ARCANE_VISION, SHIELD_BATTERY, FASTER_CHARGER);
 				break;
 			case ROGUE:
@@ -2774,6 +2783,9 @@ public enum Talent {
 				break;
 			case MAGE:
 				Collections.addAll(tierTalents, DESPERATE_POWER, ALLY_WARP);
+				break;
+			case NECROMANCER:
+				Collections.addAll(tierTalents, SOUL_EATER, NECROMANCERS_MINIONS);
 				break;
 			case ROGUE:
 				Collections.addAll(tierTalents, ENHANCED_RINGS, LIGHT_CLOAK);

@@ -263,6 +263,11 @@ public class WndHeroInfo extends WndTabbed {
 							new ItemSprite(ItemSpriteSheet.WORN_SHORTBOW),
 							new ItemSprite(ItemSpriteSheet.SCROLL_ISAZ)};
 					break;
+				case NECROMANCER:
+					icons = new Image[]{ new ItemSprite(ItemSpriteSheet.MAGES_STAFF),
+							new ItemSprite(ItemSpriteSheet.UNHOLY_BIBLE),
+							new ItemSprite(ItemSpriteSheet.SCROLL_ISAZ)};
+					break;
 			}
 			for (Image im : icons) {
 				add(im);
